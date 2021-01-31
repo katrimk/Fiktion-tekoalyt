@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiktion tekoälyhahmoja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+</head>
+<body>
+    <div class="container">
+        <h1>Fiktion tekoälyhahmoja</h1>
+
+        <p>Tämän sivun kautta voit käyttää laatimaani tietokantaa, jossa
+            on erilaisia fiktiivisiä tekoälyhahmoja: sellaisia robotteja, androideja,
+            älykkäitä tietojärjestelmiä ym. jotka ovat jonkin teknologisen kehityksen myötä
+            saavuttaneet tietoisuuden ja ovat ainakin jossain määrin itsenäisiä 
+            hahmoja siinä missä ihmisetkin. Tietokanta ja hakutoiminnot ovat vielä
+            kehitteillä, mutta voit jo kokeilla sitä. 
+        </p>
+
+        <h2>Hae tietokannasta</h2>
+
+        <p>Hae hakuehdoilla:</p>
+        <form method="POST" action="/haeNimella">
+            <label for="hakusana">Hae nimellä</label>
+            <input class="form-control" type="text" name="hakusana" placeholder="Anna hakusana..." size="60">
+            <input class="btn btn-primary" type="submit" value="Hae">
+        </form>
+
+       
+        <p></p>
+        <p>Tai hae kaikki tietokannan tiedot:</p>
+        <form method="GET" action="/haeKaikki">
+            <input class="btn btn-primary" type="submit" value="Hae kaikki tiedot">
+        </form>
+        
+        </div>
+    
+</body>
+</html>
